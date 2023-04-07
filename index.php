@@ -26,24 +26,25 @@
     <div class="container">
         <div class="row">
             <div class="col mt-5">
-
-
                 <?php
                     include("config.php");
                     switch(@$_REQUEST["page"]){
-
                         case "novo":
                             include("novo-usuario.php");
                         break;
                         case "listar":
                             include("listar-usuarios.php");
                         break;
+                        case"salvar":
+                          include("salvar-usuario.php");
+                        break;
+                        case"editar":
+                          include("editar-usuario.php");
+                        break;
                         default:
                         print"<h1>Bem vindos!</h1>";
-
                     }
                 ?>
-
             </div>
         </div>
     </div>
